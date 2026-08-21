@@ -1,8 +1,13 @@
 server:
-  port: 8081
+  port: 8080
 spring:
   application:
     name: spring-ollama-demo
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model:  "qwen3.5:2b"
 
 
 
