@@ -1,0 +1,5 @@
+spring AI : Spring官方推出的AI开发框架
+Spring AI Alibaba ：因为springAi并没有对阿里的一些服务进行兼容，
+                    所以这个就基于SpringAi构建的，简单来说就是让开发人员能更简单的去访问阿里提供的模型
+
+DashScope 大模型服务平台，百炼平台使用DashScope来调用模型

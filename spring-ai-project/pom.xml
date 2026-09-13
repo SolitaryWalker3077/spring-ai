@@ -11,9 +11,10 @@
     <!-- 声明⽗⼯程的打包⽅式为pom -->
     <packaging>pom</packaging>
     <modules>
-        <module>spring-ai-demo</module>
         <module>spring-ollama-demo</module>
         <module>spring-chat-aibot</module>
+        <module>spring-image-demo</module>
+        <module>spring-ai-alibaba</module>
     </modules>
     <!-- 完善依赖 -->
     <parent>

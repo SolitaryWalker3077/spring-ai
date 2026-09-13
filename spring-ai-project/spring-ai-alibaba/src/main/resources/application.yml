@@ -1,0 +1,14 @@
+spring:
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+#      image:
+#        options:
+#          model: qwen-image-plus
+
+logging:
+  pattern:
+    console: "%d{HH:mm:ss:SSS} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{HH:mm:ss:SSS} [%thread] %-5level %logger{36} - %msg%n"
+  level:
+    org.springframework.ai.retry.aut oconfigure: error

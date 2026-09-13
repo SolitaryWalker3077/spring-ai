@@ -1,11 +1,12 @@
-package com.ai.demo;
+package com.ai.alibaba;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 @SpringBootApplication
-public class SpringAiApplication {
+public class AlibabaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringAiApplication.class,args);
+        SpringApplication.run(AlibabaApplication.class,args);
     }
 }
