@@ -2,6 +2,11 @@ spring:
   ai:
     dashscope:
       api-key: ${DASHSCOPE_API_KEY}
+#      audio:
+#        synthesis:
+#          options:
+#            model: "cosyvoice-v1"
+#            voice: longxiaobai
 #      image:
 #        options:
 #          model: qwen-image-plus
