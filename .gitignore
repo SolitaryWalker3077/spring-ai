@@ -29,3 +29,7 @@ replay_pid*
 
 # IntelliJ IDEA
 .idea/
+
+# Generated audio
+*.WAV
+*.wav
