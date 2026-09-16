@@ -1,15 +1,12 @@
-package com.ai.alibaba;
+package com.ai.alibaba.AudioModel;
 
 import com.alibaba.cloud.ai.dashscope.audio.DashScopeSpeechSynthesisModel;
 import com.alibaba.cloud.ai.dashscope.audio.DashScopeSpeechSynthesisOptions;
 import com.alibaba.cloud.ai.dashscope.audio.synthesis.SpeechSynthesisPrompt;
 import com.alibaba.cloud.ai.dashscope.audio.synthesis.SpeechSynthesisResponse;
-import com.alibaba.cloud.ai.dashscope.audio.synthesis.SpeechSynthesisResult;
 import com.alibaba.dashscope.audio.tts.SpeechSynthesisParam;
 
 import com.alibaba.dashscope.audio.tts.SpeechSynthesizer;
-import com.alibaba.dashscope.common.ResultCallback;
-import com.alibaba.dashscope.utils.Constants;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,7 +15,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
-import java.util.concurrent.CountDownLatch;
+
 
 @SpringBootTest
 public class AudioModelTest {
