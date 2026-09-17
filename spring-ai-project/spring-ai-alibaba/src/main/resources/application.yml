@@ -16,4 +16,5 @@ logging:
     console: "%d{HH:mm:ss:SSS} [%thread] %-5level %logger{36} - %msg%n"
     file: "%d{HH:mm:ss:SSS} [%thread] %-5level %logger{36} - %msg%n"
   level:
+    root: debug  #设置日志级别
     org.springframework.ai.retry.aut oconfigure: error

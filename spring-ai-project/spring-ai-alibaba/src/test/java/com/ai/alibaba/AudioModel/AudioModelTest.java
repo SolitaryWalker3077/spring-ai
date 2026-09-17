@@ -1,7 +1,8 @@
 package com.ai.alibaba.AudioModel;
 
-import com.alibaba.cloud.ai.dashscope.audio.DashScopeSpeechSynthesisModel;
-import com.alibaba.cloud.ai.dashscope.audio.DashScopeSpeechSynthesisOptions;
+import com.alibaba.cloud.ai.dashscope.audio.*;
+import com.alibaba.cloud.ai.dashscope.audio.synthesis.SpeechSynthesisModel;
+import com.alibaba.cloud.ai.dashscope.audio.synthesis.SpeechSynthesisOptions;
 import com.alibaba.cloud.ai.dashscope.audio.synthesis.SpeechSynthesisPrompt;
 import com.alibaba.cloud.ai.dashscope.audio.synthesis.SpeechSynthesisResponse;
 import com.alibaba.dashscope.audio.tts.SpeechSynthesisParam;
@@ -21,7 +22,7 @@ import java.nio.ByteBuffer;
 public class AudioModelTest {
 
     @Autowired
-    private DashScopeSpeechSynthesisModel speechSynthesisModel;
+    private DashScopeAudioSpeechModel speechSynthesisModel;
 
     private static final String TEXT = "白日依山尽,黄河入海流";
 
@@ -41,12 +42,12 @@ public class AudioModelTest {
 
     @Test
     void setSetAudioModel() {
-        DashScopeSpeechSynthesisOptions.builder()
+        DashScopeAudioSpeechOptions speechOptions = DashScopeAudioSpeechOptions.builder()
                 .model("cosyvoice-v1")
                 .voice("longxiaobai")
                 .speed(0.5f)
                 .build();
-        SpeechSynthesisPrompt prompt = new SpeechSynthesisPrompt(TEXT);
+        SpeechSynthesisPrompt prompt = new SpeechSynthesisPrompt(TEXT,speechOptions);
         SpeechSynthesisResponse response = speechSynthesisModel.call(prompt);
 
         File file = new File(System.getProperty("user.dir") + "/out.mp3");
