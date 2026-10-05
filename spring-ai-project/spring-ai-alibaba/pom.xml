@@ -44,6 +44,12 @@
             <artifactId>dashscope-sdk-java</artifactId>
             <version>2.22.6</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.victools</groupId>
+            <artifactId>jsonschema-generator</artifactId>
+            <!-- 可根据实际情况使⽤最新稳定版本 -->
+            <version>4.37.0</version>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
