@@ -15,6 +15,7 @@
         <module>spring-chat-aibot</module>
         <module>spring-image-demo</module>
         <module>spring-ai-alibaba</module>
+        <module>mcp-client-demo</module>
     </modules>
     <!-- 完善依赖 -->
     <parent>
