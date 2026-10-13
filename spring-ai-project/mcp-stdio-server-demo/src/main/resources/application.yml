@@ -1,0 +1,11 @@
+server:
+  port: 8088
+spring:
+  ai:
+    mcp:
+      server:
+        name: user-info
+        version: 0.0.1
+  main:
+    web-application-type: none
+    banner-mode: off
