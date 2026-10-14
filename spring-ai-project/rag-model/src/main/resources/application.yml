@@ -1,0 +1,8 @@
+spring:
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+      embedding:
+        options:
+          dimensions: 512
+          model: text-embedding-v3

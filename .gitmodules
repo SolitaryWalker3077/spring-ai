@@ -1,0 +1,3 @@
+[submodule "uapi-sdk-java"]
+	path = uapi-sdk-java
+	url = https://github.com/AxT-Team/uapi-sdk-java.git

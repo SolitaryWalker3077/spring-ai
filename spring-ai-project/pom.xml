@@ -17,6 +17,7 @@
         <module>spring-ai-alibaba</module>
         <module>mcp-client-demo</module>
         <module>mcp-stdio-server-demo</module>
+        <module>rag-model</module>
     </modules>
     <!-- 完善依赖 -->
     <parent>
