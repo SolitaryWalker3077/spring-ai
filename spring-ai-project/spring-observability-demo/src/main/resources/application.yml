@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: spring-observability-demo
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+      embedding:
+        options:
+          model: text-embedding-v3
+    vectorstore:
+      redis:
+        initialize-schema: true    # 是否自动创建索引结构
+        index-name: spring-ai-observability   # 向量索引名称
+        prefix: "observability:"     # Redis Key 前缀
+  data:
+    redis:
+      url: redis://43.140.242.83:6379
+management:
+  tracing:
+    sampling:
+        # trace 采样信息, 记录每个请求
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: http://43.140.242.83:9411/api/v2/spans

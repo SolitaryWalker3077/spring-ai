@@ -33,3 +33,6 @@ replay_pid*
 # Generated audio
 *.WAV
 *.wav
+
+# RAG test output
+output.txt
